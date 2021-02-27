@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin DSB</title>
+    <link
+      rel="stylesheet"
+      href="dist/vendor/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="dist/vendor/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dist/vendor/chart.js/dist/Chart.min.css" />
+
+    <link rel="stylesheet" href="dist/css/index.min.css" />
+  </head>
+  <body>
+    <div class="app bg-primary">
+      <!-- Sidebar Section -->
+      <div class="sidebar bg-secondary">
+        <div class="sidebar_header">
+          <h1 class="app_title text-center text-white">
+            Admin<span class="text-danger">DSB</span>
+          </h1>
+        </div>
+        <ul class="sidebar_body">
+          <li class="sidebar_item">
+            <a href="#" class="sidebar_link active">
+              <i class="fa fa-home" aria-hidden="true"></i> Dashboard
+            </a>
+          </li>
+          <li class="sidebar_item">
+            <a href="#" class="sidebar_link">
+              <i class="fas fa-chart-bar"></i> Statistics
+            </a>
+          </li>
+          <li class="sidebar_item">
+            <a href="#" class="sidebar_link">
+              <i class="fas fa-chart-pie"></i> Pies
+            </a>
+          </li>
+          <li class="sidebar_item">
+            <a href="#" class="sidebar_link" style="position: relative">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i> Products
+            </a>
+            <a href="#" class="dropdown_caret text-white"
+              ><i class="fa fa-caret-right" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li class="sidebar_item">
+            <a href="#" class="sidebar_link">
+              <i class="fa fa-bell" aria-hidden="true"></i> Notifications
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Sidebar Section -->
+
+      <div>
+        <!-- Navbar Section -->
+        <div class="app_navbar">
+          <div class="container d-flex justify-content-between">
+            <h2 class="welcome_text text-white">Hello, Wibucode's Member</h2>
+            <ul class="navbar_right d-flex" style="gap: 32px">
+              <li class="navbar_item">
+                <a href="#" class="navbar_link"
+                  ><i class="fa fa-search" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="navbar_item">
+                <a href="#" class="navbar_link"
+                  ><i class="fa fa-bell" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="navbar_item">
+                <a href="#" class="navbar_link"
+                  ><i class="fa fa-cog" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li class="navbar_item">
+                <a href="#" class="navbar_link"
+                  ><i class="fa fa-user-circle" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Navbar Section -->
+        <!-- Main Section -->
+        <main class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-3 app_card">
+                <div class="card-header">
+                  <h4 class="card-title">Purchase</h4>
+                  <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="card-body">
+                  <span class="d-block font-weight-bold value">38955</span>
+                  <span class="desc">Since last month</span>
+                  <span class="d-block text-right stats text-success"
+                    >+ 5.622%</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3 app_card">
+                <div class="card-header">
+                  <h4 class="card-title">Sales</h4>
+                  <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                </div>
+                <div class="card-body">
+                  <span class="d-block font-weight-bold value">50012</span>
+                  <span class="desc">Since last month</span>
+                  <span class="d-block text-right stats text-danger"
+                    >- 4.32%</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3 app_card">
+                <div class="card-header">
+                  <h4 class="card-title">Order</h4>
+                  <i class="fas fa-store"></i>
+                </div>
+                <div class="card-body">
+                  <span class="d-block font-weight-bold value">67644</span>
+                  <span class="desc">Since last month</span>
+                  <span class="d-block text-right stats text-success"
+                    >+ 5.622%</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-3 app_card">
+                <div class="card-header">
+                  <h4 class="card-title">Overview</h4>
+                </div>
+                <div class="card-body">
+                  <ul class="list-group card_list_overview">
+                    <li class="list-group-item active">
+                      <span class="d-block font-weight bold"
+                        >Member Profit</span
+                      >
+                      <span>Since last month</span>
+                      <span class="float-right">+ 23455</span>
+                    </li>
+                    <li class="list-group-item">
+                      <span class="d-block font-weight bold"
+                        >Overdue Cases</span
+                      >
+                      <span>Since last month</span>
+                      <span class="float-right">- 45655</span>
+                    </li>
+                    <li class="list-group-item">
+                      <span class="d-block font-weight bold">Support</span>
+                      <span>Since last month</span>
+                      <span class="float-right">+ 822</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="card mb-3 app_card">
+                <div class="card-header">
+                  <h3 class="card-title">Data Statistics</h3>
+                  <div class="float-right d-flex" style="gap: 32px">
+                    <span>2021</span><span>2020</span><span>2019</span
+                    ><span>2018</span
+                    ><a href="#" class="text-white"
+                      ><i class="fa fa-caret-right" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <canvas id="stats" width="100vw" height="30vh"></canvas>
+                  <div class="stats_desc d-flex">
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center stats_desc_item"
+                    >
+                      <h4>100%</h4>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center stats_desc_item bg-danger"
+                    >
+                      <h4>40%</h4>
+                      <span class="d-block text-center">Growth</span>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center stats_desc_item bg-danger"
+                    >
+                      <h4>50%</h4>
+                      <span class="d-block text-center">Refund</span>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center stats_desc_item bg-danger"
+                    >
+                      <h4>7%</h4>
+                      <span class="d-block text-center">Piece</span>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center stats_desc_item bg-danger"
+                    >
+                      <h4>3%</h4>
+                      <span class="d-block text-center">Online</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card mb-3 app_card">
+                <div class="card-header">
+                  <h3 class="card-title">Revenue</h3>
+                  <div class="float-right d-flex" style="gap: 12px">
+                    <span class="p-2 bg-danger">Week</span
+                    ><span class="p-2">Month</span><span class="p-2">Year</span
+                    ><span class="p-2">2021</span
+                    ><a href="#" class="text-white"
+                      ><i class="fa fa-caret-down" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="revenue_chart">
+                    <div class="revenue_item">
+                      <div class="d-flex align-items-center mr-3">
+                        <div class="bg-success dot mr-1"></div>
+                        <span class="font-weight-bold">35000</span>
+                      </div>
+                      <span class="line"></span>
+                    </div>
+                    <div class="revenue_item">
+                      <div class="d-flex align-items-center mr-3">
+                        <div class="bg-success dot mr-1"></div>
+                        <span class="font-weight-bold">20000</span>
+                      </div>
+                      <span class="line"></span>
+                    </div>
+                    <div class="revenue_item">
+                      <div class="d-flex align-items-center mr-3">
+                        <div class="bg-danger dot mr-1"></div>
+                        <span class="font-weight-bold">4000</span>
+                      </div>
+                      <span class="line"></span>
+                    </div>
+                    <div class="revenue_item">
+                      <div class="d-flex align-items-center mr-3">
+                        <div class="bg-danger dot mr-1"></div>
+                        <span class="font-weight-bold">1000</span>
+                      </div>
+                      <span class="line"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3 app_card">
+                <div class="card-header">
+                  <h3 class="card-title">Goals</h3>
+                </div>
+                <div class="card-body">
+                  <canvas id="goals-chart" width="80vw" height="40vh"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <!-- Main Section -->
+      </div>
+    </div>
+
+    <script src="dist/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="dist/js/index.js"></script>
+  </body>
+</html>
